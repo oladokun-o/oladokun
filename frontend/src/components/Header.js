@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import faviLogo from '../assets/images/logo.png';
 
 function Header({getPage, page}) {
-	const ref = useRef(null);
+	//const ref = useRef(null);
 
 	function scrollInView(e) {
 		e.currentTarget?.scrollIntoView({ behavior: 'smooth' })

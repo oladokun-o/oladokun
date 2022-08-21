@@ -22,8 +22,11 @@ function Hello() {
 							<Typer dataText={[
 								'Front_end Developer', 
 								'Web Developer'
-								]}/>				
-							<small className='text-comment'>//play the game to continue or you can just skip :)</small>
+								]}/>											
+							<small className='text-comment'>
+								 {/* eslint-disable */}
+								//play the game to continue or you can just skip :)
+							</small>
 							<br />
 							<small className='text-comment'>//or check it out on my GitHub page</small>
 							<br />
