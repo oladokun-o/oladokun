@@ -1,0 +1,343 @@
+.main-background {
+    background-color: var(--primary-b);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    background-color: var(--primary-b);
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 0 5px #00000046;
+}
+
+.header button.b-active > span {
+    color: var(--secondary-d) !important;
+}
+
+.header button.b-active > img {
+    color: var(--secondary-d) !important;
+}
+
+.header button.b-active {
+    border-bottom: 2px solid var(--accent-a) !important;
+    background-color: #01080e88 !important;
+    box-shadow: inset 0 0 15px #00000059;
+}
+
+.header button {
+    cursor: default !important;
+    background-color: transparent;
+    border: unset;
+    position: relative;
+}
+
+.header button:hover {
+    background-color: transparent;
+}
+
+.header button.hoverable {
+    cursor: pointer !important;
+    background-color: transparent;
+    border: unset;
+}
+
+.header button.hoverable:hover {
+    background-color: #01080e88;
+    box-shadow: inset 0 0 15px #00000059;
+}
+
+.header button.hoverable:active,
+.header button.hoverable:focus {
+    background-color: #01080e88;
+    box-shadow: inset 0 0 15px #00000059;
+    border-bottom: 2px solid var(--accent-a) !important;
+}
+
+.header .d-flex.scroll img {
+    position: absolute;
+    left: 5px;
+    color: var(--secondary-a);
+    font-size: small;
+    top: 12px;
+}
+
+.header span {
+    padding-left: 12px;
+}
+
+.header .d-flex.scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.header .d-flex.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.header .name-tab {
+    background-color: var(--primary-b);
+    white-space: nowrap;
+}
+
+footer.header span {
+    padding-left: 0px;
+}
+
+footer.header a {
+    text-decoration: none;
+}
+
+footer.header a:hover {
+    background-color: #01080e88;
+    box-shadow: inset 0 0 15px #00000059;
+}
+
+.body {
+    height: calc(100vh - 138px);
+}
+
+.text {
+    color: var(--secondary-d);
+}
+
+.text-comment {
+    color: var(--secondary-a);
+    letter-spacing: -1px;
+}
+
+.primary-text {
+    color: var(--secondary-c);
+}
+
+.code-a {
+    color: var(--gradient-a);
+}
+
+.code-b {
+    color: var(--gradient-b);
+}
+
+.code-c, 
+.code-c a {
+    color: var(--accent-c) !important;
+}
+
+.fill {
+    height: 100%;
+}
+
+.terminal-line {
+    position: relative;
+    bottom: -3px;
+}
+
+.gradient-a {
+    position: absolute;
+    width: calc(100vh - 320px);
+    height: calc(100vh - 320px);
+    left: -47px;
+    top: -76px;
+    background: var(--gradient-b);
+    opacity: 0.4;
+    filter: blur(174px);
+    transform: rotate(-94.3deg);
+}
+
+.gradient-b {
+    position: absolute;
+    width: calc(100vh - 320px);
+    height: calc(100vh - 320px);
+    right: -120px;
+    bottom: -74px;
+    background: var(--gradient-a);
+    opacity: 0.4;
+    filter: blur(174px);
+    transform: rotate(13.51deg);
+}
+
+.game-box {
+    background: linear-gradient(150.26deg, #175553b3 1.7%, #43d9ad17 81.82%);
+    border: 1px solid #0C1616;
+    box-shadow: inset 0px 2px 0px #ffffff4d;
+    backdrop-filter: blur(64px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 8px;
+    position: relative;
+}
+
+.game-box .screw.top.left {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: 15px;
+    top: 15px;
+    padding: 0;
+    background: radial-gradient(73.08% 73.08% at 50% 26.92%, #196C6A 15.1%, #114B4A 100%);
+    box-shadow: 2px 2px 4px #0D4341, inset 0px 1px 2px #1A8277;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box .screw.top.right {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    right: 15px;
+    top: 15px;
+    padding: 0;
+    background: radial-gradient(73.08% 73.08% at 50% 26.92%, #217D7A 15.1%, #114B4A 100%);
+    box-shadow: 2px 2px 4px #0D4341, inset 0px 1px 2px #1F8177;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box .screw.bottom.left {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: 15px;
+    bottom: 15px;
+    padding: 0;
+    background: radial-gradient(73.08% 73.08% at 50% 26.92%, #164C51 15.1%, #0D3A40 100%);
+    box-shadow: 2px 2px 4px #092D32, inset 0px 1px 2px #16645C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box .screw.bottom.right {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    padding: 0;
+    background: radial-gradient(73.08% 73.08% at 50% 26.92%, #234B7C 15.1%, #122E4F 100%);
+    box-shadow: 2px 2px 4px #122C4E, inset 0px 1px 2px #2C588D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box .screw i {
+    font-size: 12px;
+    padding-top: 1px;
+}
+
+.game {
+    background: #011627d6;
+    box-shadow: inset 1px 5px 11px #02121bb5;
+    border-radius: 8px;
+    height: calc(100vh - 700px);
+}
+
+.game-info {
+    background: #01142330;
+    border-radius: 8px;
+}
+
+.skip-btn-contn {
+    position: absolute;
+    right: 0 !important;
+    left: unset;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.terminal-co {
+    position: relative;
+    top: 4px;
+    left: -7px;
+    width: 16px;
+    display: inline-block;;
+}
+
+.snake {
+    position: relative;
+}
+
+.snake-food-plate {
+    width: 74px;
+    padding-bottom: 17px;
+}
+
+.snake-food-tray img {
+    width: 20.69px;
+}
+
+.home-text {
+    z-index: 100;
+}
+
+.continue-btn {
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+}
+
+.continue-btn i {
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
+
+.game-controls button {
+    background: #010C15;
+    border: 1px solid #1E2D3D;
+    border-radius: 5px;
+    color: white;
+    width: 49.08px;
+    height: 28.69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    box-shadow: 7px 6px 28px 1px #0000003d;
+    transition: 0.2s all;
+}
+
+.game-controls button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px #00000056;
+}
+
+@media only screen and (max-width: 480px) {
+    .game {
+        height: calc(100vh - 450px);
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 810px) {
+    .game {
+        height: calc(100vh - 700px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {   
+    .game {
+        height: calc(100vh - 300px);
+    }
+}

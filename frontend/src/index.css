@@ -1,0 +1,151 @@
+@import url(./fonts.css);
+
+html {
+  --primary-a: #01080E;
+  --primary-b: #011627;
+  --primary-c: #011221;
+  --secondary-a: #607B96;
+  --secondary-b: #3C9D93;
+  --secondary-c: #4D5BCE;
+  --secondary-d: #FFFFFF;
+  --accent-a: #FEA55F;
+  --accent-b: #43D9AD;
+  --accent-c: #E99287;
+  --accent-d: #C98BDF;
+  --line: #1E2D3D;
+  --gradient-a: #4D5BCE;
+  --gradient-b: #43D9AD;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'fira' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-a) !important;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'fira' !important;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.App-editor {
+  width: 100%;
+}
+
+.primary-btn {
+  height: 38px;
+  border-radius: 8px;
+  padding: 10px 14px 10px 14px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  gap: 10px;
+  background-color: var(--accent-a) !important;
+  color: var(--primary-a) !important;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #FFAC6B !important;
+}
+
+.default-btn {
+  height: 38px;
+  border-radius: 8px;
+  padding: 10px 14px 10px 14px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  gap: 10px;
+  color: var(--secondary-d) !important;
+  background-color: #1C2B3A !important;
+  border: none;
+}
+
+.default-btn:hover {
+  background-color: #263B50 !important;
+}
+
+.ghost-btn {
+  color: var(--secondary-d) !important;
+  border: 1px solid var(--secondary-d) !important;
+  background-color: transparent !important;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px !important;
+  gap: 10px;
+}
+
+.ghost-btn:hover {
+  opacity: 0.5;
+}
+
+.b {
+  border: 1px solid var(--line) !important;
+}
+
+.b-bottom {
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.b-top {
+  border-top: 1px solid var(--line) !important;
+}
+
+.b-left {
+  border-left: 1px solid var(--line) !important;
+}
+
+.b-right {
+  border-right: 1px solid var(--line) !important;
+}
+
+span {
+  color: var(--secondary-a);
+}
+
+.sticky-contn-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#cursor {
+  display: inline-block;
+  width: 10px;
+  border-bottom: .1em solid var(--secondary-c);
+  animation: blink .7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
