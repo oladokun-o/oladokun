@@ -317,11 +317,17 @@ footer.header a:hover {
     }
     .body {
         height: 100vh;
+        width: 100%;
         overflow-x: hidden;
         overflow-y: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
         scroll-behavior: smooth;
+        position: fixed;
+        z-index: 50;
+        top: 0;
+        left: 0;
+        background: var(--primary-b);
     }
     
     .body::-webkit-scrollbar {

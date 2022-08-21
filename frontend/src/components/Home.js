@@ -30,7 +30,7 @@ class Home extends React.Component {
 	
 	render() {
 		return (
-			<div className='main-background position-relative container-fluid p-0'>
+			<div className='main-background position-relative border container-fluid p-0'>
 				<Header getPage={this.getPage} page={this.state.page}></Header>
 				<Body page={this.DisplayPage}></Body>
 				<Footer></Footer>
