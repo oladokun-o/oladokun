@@ -280,6 +280,7 @@ footer.header a:hover {
 
 .continue-btn {
     position: absolute;
+    z-index: 100;
     right: 0;
     bottom: -30px;
 }
@@ -315,12 +316,12 @@ footer.header a:hover {
         height: calc(100vh - 450px);
     }
     .body {
-        height: 100%;
+        height: 100vh;
         overflow-x: hidden;
         overflow-y: scroll;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        padding-top: 650px;
+        scroll-behavior: smooth;
     }
     
     .body::-webkit-scrollbar {
@@ -334,6 +335,12 @@ footer.header a:hover {
     }
     .body {
         height: calc(100vh - 350px);
+    }    
+    .App {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 }
 
@@ -344,5 +351,10 @@ footer.header a:hover {
     .body {
         height: calc(100vh - 200px);
     }
-
+    .App {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 }
