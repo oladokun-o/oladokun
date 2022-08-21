@@ -5,17 +5,6 @@
     overflow: hidden;
 }
 
-.body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.body::-webkit-scrollbar {
-    display: none;
-}
-
 .header {
     background-color: var(--primary-b);
     position: relative;
@@ -23,7 +12,8 @@
     box-shadow: 0 0 5px #00000046;
 }
 
-.header button.b-active > span {
+.header button.b-active > span,
+.header button.b-active > i {
     color: var(--secondary-d) !important;
 }
 
@@ -66,7 +56,7 @@
     border-bottom: 2px solid var(--accent-a) !important;
 }
 
-.header .d-flex.scroll img {
+.header .d-flex.scroll i {
     position: absolute;
     left: 5px;
     color: var(--secondary-a);
@@ -105,10 +95,6 @@ footer.header a {
 footer.header a:hover {
     background-color: #01080e88;
     box-shadow: inset 0 0 15px #00000059;
-}
-
-.body {
-    height: calc(100vh - 138px);
 }
 
 .text {
@@ -295,7 +281,7 @@ footer.header a:hover {
 .continue-btn {
     position: absolute;
     right: 0;
-    bottom: -120px;
+    bottom: -30px;
 }
 
 .continue-btn i {
@@ -328,16 +314,35 @@ footer.header a:hover {
     .game {
         height: calc(100vh - 450px);
     }
+    .body {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-top: 650px;
+    }
+    
+    .body::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 810px) {
     .game {
         height: calc(100vh - 700px);
     }
+    .body {
+        height: calc(100vh - 350px);
+    }
 }
 
 @media only screen and (min-width: 1200px) {   
     .game {
-        height: calc(100vh - 300px);
+        height: calc(100vh - 350px);
     }
+    .body {
+        height: calc(100vh - 200px);
+    }
+
 }

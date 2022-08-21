@@ -12,11 +12,11 @@ function Hello() {
 	}
 
     return (
-        <div className='container-fluid fill d-flex justify-content-center align-items-center'>
-            <div className="col-md-12 col-lg-10 fill p-2 px-3">
-                <div className="row fill">
-                    <div className="col-12 col-md-6 d-flex fill pb-5 pb-md-0 justify-content-center align-items-center position-relative home-text p-0">
-                        <div className="container-fluid text-start position-relative pb-5 p-md-0">
+        <div className='container-fluid d-flex justify-content-md-center align-items-md-center'>
+            <div className="col-12col-md-12 col-lg-10 p-2 px-3">
+                <div className="row">
+                    <div className="col-12 col-md-6 d-md-flex pb-5 pb-md-0 justify-content-center align-items-center position-relative p-0">
+                        <div className="container-fluid text-start position-relative py-5 p-md-0">
                             <span className='text'>Hi, I am</span>
                             <h2 className="text mb-0">Oladokun Oladipupo</h2>
 							<Typer dataText={[
@@ -42,11 +42,11 @@ function Hello() {
 							</button>
                         </div>	
                     </div>
-					<div  ref={ref} className="col-12 col-md-6 d-flex fill justify-content-center align-items-end align-items-md-center pt-5 px-0 mt-5 m-md-0 p-md-0">
-						<div className="container-fluid position-relative p-0 mt-5 m-md-0">
+					<div  ref={ref} className="col-12 col-md-6 d-flex fill justify-content-center align-items-end align-items-md-center pt-5 px-0 p-md-0">
+						<div className="container-fluid position-relative p-0">
 							<div className="gradient-a"></div>
 							<div className="gradient-b"></div>
-							<div className="game-box col-12 px-4 py-5 px-lg-5 py-lg-5 px-md-4 py-md-5 mt-5 m-md-0">
+							<div className="game-box col-12 px-4 py-5 px-lg-5 py-lg-5 px-md-4 py-md-5">
 								<div className="screw top left">
 									<i className="ri-close-fill"></i>
 								</div>

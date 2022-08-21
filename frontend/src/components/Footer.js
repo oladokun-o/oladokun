@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<footer className='sticky-bottom b-top px-2 header'>
+		<footer className='fixed-bottom sticky-md-bottom b-top px-2 header'>
 			<div className="row">
 				<button title='Find me on social media' className="col-auto col-md-auto d-none d-md-block ps-3 text-center">
 					<span>Find me:</span>

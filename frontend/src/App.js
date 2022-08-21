@@ -8,7 +8,7 @@ import Home from './components/Home';
 function App() {
 
 	return (
-		<div className="App p-2 p-md-4 p-lg-5">
+		<div className="App p-0 p-md-4 p-lg-5">
 			<div className="App-editor shadow">
 				<Home></Home>
 			</div>
